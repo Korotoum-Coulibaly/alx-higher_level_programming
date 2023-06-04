@@ -9,8 +9,8 @@ r.get(process.argv[2], (err, res, body) => {
     const movies = JSON.parse(body).results;
     movies.forEach(movie => {
       movie.characters.forEach(character => {
-	if (character.includes('people/18/')) count++;
-	});
+        if (character.includes('people/18/')) count++;
+      });
     });
     console.log(count);
   }
