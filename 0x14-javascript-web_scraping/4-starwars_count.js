@@ -10,7 +10,7 @@ r.get(process.argv[2], (err, res, body) => {
     movies.forEach(movie => {
       movie.characters.forEach(character => {
 	if (character.includes('people/18/')) count++;
-      });
+	});
     });
     console.log(count);
   }
