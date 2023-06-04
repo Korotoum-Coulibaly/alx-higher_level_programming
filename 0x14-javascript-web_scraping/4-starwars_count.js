@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const r = require('request);
+const r = require('request');
 
 r.get(process.argv[2], (err, res, body) => {
   if (err) console.log(err);
